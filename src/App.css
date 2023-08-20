@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: summerwind;
+  src: url('./SummerWind-ywdxm.ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face{
+  font-family:storica;
+  src:url('./Storica-Regular.ttf');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+  display:flex;
+  column-gap: 50px;
+  align-content: center;
+  justify-content: space-between;
+  height:70px;
+  /*background-color: #5e57574e;*/
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#head{
+  font-size: 50px;
+}
+
+body{
+  /*background-color: #dfdbd5;*/
+  
+}
+.left{
+  height:100vh;
+  margin: 0;
+ 
+  float:left;
+}
+.info{
+  height:100vh;
+
+  float: right;
+}
+.info h1{
+  font-family: summerwind;
+  font-size: 130px;
+}
+.info p{
+  font-family: storica;
+  font-size:20px;
+}
+
+.Container{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width:100%;
+  height: 100vh;
+  flex-direction: column;
+  gap:100px;
 }
 
-.App-link {
-  color: #61dafb;
+#image-box{
+  margin-top: 100px;
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#text-box{
+  animation: fadeInAnimation ease 10s;
+  font-size: 28px;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+      opacity: 1;
   }
 }
+
+.btn {
+  border: none;
+  background-color: inherit;
+ margin-top: 100px;
+  font-size: 50px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: summerwind;
+}
+.btn:hover{
+  color:rgb(78, 73, 73);
+}
+
+#welcome{
+  font-size: 50px;
+  margin-top: 100px;
+  font-family: storica;
+  animation: fadeInAnimation ease 3s;
+}
+
+
