@@ -11,7 +11,7 @@ import {
   Route,
   BrowserRouter,
 } from "react-router-dom";
-import { Link } from "react-router-dom";
+
 function App() {
   return (
     <div>
@@ -32,9 +32,9 @@ function App() {
           <br></br>
         </p>
         <div>
-          <Link to="http://localhost:3000">
+          
             <button>EVENTS</button>
-          </Link>
+          
         </div>
       </div>
     </div>
